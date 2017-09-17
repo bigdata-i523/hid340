@@ -5,7 +5,7 @@
 ```
 owner:
     hid: 340
-    name: Tim A. Thompson
+    name: Tim Thompson
     url: https://tat2.io
 ```
 
