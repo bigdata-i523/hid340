@@ -6,7 +6,7 @@
 owner:
     hid: 340
     name: Tim A. Thompson
-    url: https://tat2.io
+    url: [Tim Thompson's sandbox](https://tat2.io)
 ```
 
 # Paper 1
