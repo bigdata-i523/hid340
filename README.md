@@ -6,7 +6,7 @@
 owner:
     hid: 340
     name: Tim Thompson
-    url: https://tat2.io
+    url: https://github.com/bigdata-i523/hid340
 ```
 
 # Paper 1
