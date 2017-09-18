@@ -22,3 +22,4 @@
 
 * 09/06/17 Submitted topic for Paper 1 (Big data analytics in libraries); installed JabRef
 * 09/16/17 Ordered the book [Practical LaTeX](https://www.amazon.com/gp/product/331906424X/) to learn basic LaTeX for writing the course papers
+* 09/17/17 Submitted topic for Paper 2
