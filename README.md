@@ -38,6 +38,3 @@ paper2:
    type: latex
    status: in progress
 ```
-
-
-HID340, Tim Thompson, Big data on the blockchain? Distributed networks and large-scale analytics
