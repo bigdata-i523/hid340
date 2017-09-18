@@ -6,7 +6,7 @@
 owner:
     hid: 340
     name: Tim Thompson
-    url: https://tat2.io
+    url: https://github.com/bigdata-i523/hid340
 ```
 
 # Paper 1
@@ -23,3 +23,21 @@ paper1:
    type: latex
    status: in progress
 ``` 
+
+# Paper 2
+
+```
+paper2:
+   author: 
+   - Timothy A. Thompson
+   hid: 
+   - 340   
+   title: Big data on the blockchain? Distributed networks and large-scale analytics
+   abstract: Massive distributed systems such as IPFS, BigchainDB, and Ethereum have been designed with the intention of reengineering the architecture of online information systems and eliminating exposure to centralized points of failure. Can these systems also support big data analytics and high-performance computing?
+   url: https://github.com/bigdata-i523/hid340/paper2/...
+   type: latex
+   status: in progress
+```
+
+
+HID340, Tim Thompson, Big data on the blockchain? Distributed networks and large-scale analytics
