@@ -1,10 +1,11 @@
 FILE=report
+FLAGS=-interaction nonstopmode -halt-on-error -file-line-error 
 
 all:
-	pdflatex ${FILE}
+	pdflatex ${FLAGS} ${FILE}
 	bibtex ${FILE}
-	pdflatex ${FILE}
-	pdflatex ${FILE}
+	pdflatex ${FLAGS} ${FILE}
+	pdflatex ${FLAGS} ${FILE}
 
 pack:
 	rm -rf ${FILE}
@@ -33,3 +34,28 @@ watch:
 	latexmk -pvc -view=pdf ${FILE}
 
 .PHONY: all clean view fast watch
+
+pull:
+	git pull
+
+up:
+	git commit -a
+	git push
+
+publish:
+	@echo "==============================================================="
+	@echo "publish ${FILE}.pdf -> http://cyberaide.github.io/papers/${FILE}.pdf" 
+	@echo "==============================================================="
+	cp ${FILE}.pdf /tmp
+	cd ..; git checkout gh-pages
+	cp /tmp/${FILE}.pdf .
+	git add ${FILE}.pdf
+	git commit -m "adding new version of ${FILE}.pdf" ${FILE}.pdf
+	git push
+	cd bigdata
+	git checkout master
+
+
+bib-extract:
+	echo "EXTRACTING ALL USED CITATIONS INTO A BIB FILE"
+	bibtool -x ${FILE}.aux -o ${FILE}.bib
