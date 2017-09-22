@@ -12,7 +12,7 @@
 
 # Practice
 
-* 09/02/17 Purchased the book [Building the Web of Things](https://www.manning.com/books/building-the-web-of-things)
+* 09/02/17 Purchased the book [_Building the Web of Things_](https://www.manning.com/books/building-the-web-of-things)
 * 09/03/17 Reformatted hard drive on home workstation; upgraded to Ubuntu 16.04 from 14.04; installed VirtualBox with Ubuntu 16.04 and enabled Python 2 and 3 via pyenv.
 * 09/04/17 Purchased Raspberry Pi 3, including [SunFounder 37-module sensor kit with breadboard and jump wires](https://www.amazon.com/gp/product/B014PF05ZA/)
 * 09/08/17 Set up Raspberry Pi and ran initial tests with LED actuators; began researching Raspbery Pi projects
@@ -21,7 +21,7 @@
 # Writing
 
 * 09/06/17 Submitted topic for Paper 1 (Big data analytics in libraries); installed JabRef
-* 09/16/17 Ordered the book [Practical LaTeX](https://www.amazon.com/gp/product/331906424X/) to learn basic LaTeX for writing the course papers
+* 09/16/17 Ordered the book [_Practical LaTeX_](https://www.amazon.com/gp/product/331906424X/) to learn basic LaTeX for writing the course papers
 * 09/17/17 Submitted topic for Paper 2 (Big data on the blockchain? Distributed networks and large-scale analytics)
-* 09/20/17 Reading Practical LaTeX
+* 09/20/17 Reading _Practical LaTeX_
 * 09/21/17 Worked on literature review for Paper 1
