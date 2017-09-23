@@ -23,5 +23,5 @@
 * 09/06/17 Submitted topic for Paper 1 (Big data analytics in libraries); installed JabRef
 * 09/16/17 Ordered the book [_Practical LaTeX_](https://www.amazon.com/gp/product/331906424X/) to learn basic LaTeX for writing the course papers
 * 09/17/17 Submitted topic for Paper 2 (Big data on the blockchain? Distributed networks and large-scale analytics)
-* 09/20/17 Reading _Practical LaTeX_
+* 09/20/17 Reading _Practical LaTeX_; installed TeX on Ubuntu 16.04; tested compilation on sample files
 * 09/21/17 Worked on literature review for Paper 1
