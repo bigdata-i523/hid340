@@ -17,7 +17,7 @@ paper1:
    - Timothy A. Thompson
    hid: 
    - 340   
-   title: Big data analytics for research libraries
+   title: Big data analytics for archives and research libraries
    abstract: Large research libraries are currently searching for technical solutions to migrate their catalogs and databases from legacy formats to Linked Open Data, using the W3C Resource Description Framework (RDF) standard. How can the tools of big data analytics be used to enable this transition? The problem of entity resolution and name disambiguation will be examined in particular.
    url: https://github.com/bigdata-i523/hid340/paper1/report.pdf
    type: latex
