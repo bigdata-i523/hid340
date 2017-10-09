@@ -36,7 +36,7 @@ paper1:
        more relevant to researchers.
    url: https://github.com/bigdata-i523/hid340/paper1/report.pdf
    type: latex
-   status: in progress
+   status: in progress 100%
    chapter: Media
 ``` 
 
