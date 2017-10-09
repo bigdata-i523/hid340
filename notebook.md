@@ -8,7 +8,6 @@
 # Theory
 
 * 08/26/17 - 08/29/17 Read the Organization section on Cloudmesh, including the assigned section on how to use Piazza; read content and watched videos from the Theory section through 3.1.1.11 (Web Search and Information Retrieval)
-* 08/28/17 Attended first online tutorial session via Zoom
 
 # Practice
 
@@ -29,4 +28,5 @@
 
 # Meetings
 
-* 10/02/2017 Meeting: Attended class meeting for online students
+* 08/28/17 Meeting: Attended first online tutorial session via Zoom
+* 10/02/17 Meeting: Attended class meeting for online students
