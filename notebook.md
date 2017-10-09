@@ -25,3 +25,8 @@
 * 09/17/17 Submitted topic for Paper 2 (Big data on the blockchain? Distributed networks and large-scale analytics)
 * 09/20/17 Reading _Practical LaTeX_; installed TeX on Ubuntu 16.04; tested compilation on sample files
 * 09/21/17 Worked on literature review for Paper 1
+* 09/25/17 - 10/09/17 Continued working on Paper 1; began literature review for Paper 2
+
+# Meetings
+
+* 10/02/2017 Meeting: Attended class meeting for online students
