@@ -36,7 +36,7 @@ paper1:
        more relevant to researchers.
    url: https://github.com/bigdata-i523/hid340/paper1/report.pdf
    type: latex
-   status: 99%
+   status: 100%
    chapter: Media
 ``` 
 
@@ -47,7 +47,7 @@ paper2:
    author: 
    - Timothy A. Thompson
    hid: 
-   - 340   
+   - 340
    title: Big data on the blockchain? Distributed networks and large-scale analytics
    abstract: Massive distributed systems such as IPFS, BigchainDB, and Ethereum have been designed with the intention of reengineering the architecture of online information systems and eliminating exposure to centralized points of failure. Can these systems also support big data analytics and high-performance computing?
    url: https://github.com/bigdata-i523/hid340/paper2/report.pdf
