@@ -19,12 +19,21 @@ paper1:
    - 340
    title: Big data analytics for archives and research libraries
    abstract: >
-       Archives and research libraries are currently searching for
-       technical solutions to migrate their catalogs and databases from
-       legacy formats to Linked Open Data, using the W3C Resource
-       Description Framework (RDF) standard. How can the tools of big data
-       analytics be used to enable this transition? The problem of entity
-       resolution and name disambiguation will be examined in particular. 
+       Research libraries and archives have played a longstanding role in
+       information management and access. In the second half of the twentieth
+       century, libraries were at the forefront of automation and networked
+       access to information. Since the advent of the internet, however, they
+       have failed to keep pace with technological advances and currently face
+       serious challenges in serving the evolving needs of researchers, whose
+       information-seeking strategies are now shaped by internet search engines
+       and online social media applications. To remain relevant in the current
+       information landscape, libraries and archives must implement new
+       strategies for converting legacy metadata to new formats that can add
+       value to the research process. Although the data and metadata produced by
+       libraries and archives may not always qualify, \textit{prima facie}, as
+       big data, an awareness among information professionals of the tools,
+       techniques, and affordances of big data can help make library services
+       more relevant to researchers.
    url: https://github.com/bigdata-i523/hid340/paper1/report.pdf
    type: latex
    status: in progress
