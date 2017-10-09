@@ -30,7 +30,7 @@ paper1:
        information landscape, libraries and archives must implement new
        strategies for converting legacy metadata to new formats that can add
        value to the research process. Although the data and metadata produced by
-       libraries and archives may not always qualify, \textit{prima facie}, as
+       libraries and archives may not always qualify, prima facie, as
        big data, an awareness among information professionals of the tools,
        techniques, and affordances of big data can help make library services
        more relevant to researchers.
