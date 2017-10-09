@@ -28,5 +28,5 @@
 
 # Meetings
 
-* 08/28/17 Meeting: Attended first online tutorial session via Zoom
-* 10/02/17 Meeting: Attended class meeting for online students
+* 08/28/17 Attended first online tutorial session via Zoom
+* 10/02/17 Attended class meeting for online students
