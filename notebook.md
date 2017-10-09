@@ -8,7 +8,6 @@
 # Theory
 
 * 08/26/17 - 08/29/17 Read the Organization section on Cloudmesh, including the assigned section on how to use Piazza; read content and watched videos from the Theory section through 3.1.1.11 (Web Search and Information Retrieval)
-* 08/28/17 Attended first online tutorial session via Zoom
 
 # Practice
 
@@ -25,3 +24,9 @@
 * 09/17/17 Submitted topic for Paper 2 (Big data on the blockchain? Distributed networks and large-scale analytics)
 * 09/20/17 Reading _Practical LaTeX_; installed TeX on Ubuntu 16.04; tested compilation on sample files
 * 09/21/17 Worked on literature review for Paper 1
+* 09/25/17 - 10/09/17 Continued working on Paper 1; began literature review for Paper 2
+
+# Meetings
+
+* 08/28/17 Meeting: Attended first online tutorial session via Zoom
+* 10/02/17 Meeting: Attended class meeting for online students
