@@ -30,3 +30,9 @@
 
 * 08/28/17 Attended first online tutorial session via Zoom
 * 10/02/17 Attended class meeting for online students
+
+# Location
+
+* Address: New Haven, CT, 344 Winchester Ave.
+* Latitude: 41.324844
+* Longitude: -72.929680
