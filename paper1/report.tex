@@ -1,11 +1,12 @@
 \documentclass[sigconf]{acmart}
 
-\usepackage{hyperref} % For HTTP links
+\usepackage{hyperref}
 
 \usepackage{endfloat}
 \renewcommand{\efloatseparator}{\mbox{}} % no new page between figures
 
 \usepackage{booktabs} % For formal tables
+\usepackage{hyperref} % For HTTP links
 
 \settopmatter{printacmref=false} % Removes citation information below abstract
 \renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
@@ -38,7 +39,7 @@ Research libraries and archives have played a longstanding role in information m
 \section{Introduction}
 Cultural heritage institutions such as libraries and archives have a longstanding tradition of producing structured data---in the form of catalog records or finding aids---to describe their collections. In the twentieth century, library card catalogs were gradually replaced by machine-readable formats, the foremost of which were the MAchine Readable Cataloging (MARC) formats for bibliographic and authority data (standardized as ISO 2709 and ANSI/NISO Z39.2)\cite{kF12}. 
 
-Initial development of the core MARC format, commissioned by the Library of Congress, was finalized in 1968, when the first electronic catalog records were distributed\cite{kF12}. Originally, MARC records were used to facilitate the automated creation of card catalogs, which remained the primary method of information retrieval in libraries until the 1980s, when online public access catalogs (OPACs) became available and the pace of automation began to accelerate\cite{mT13}. It was not until 2004 that the MARC record format (stored as a binary file) was mapped to an XML schema, making it more amenable to computation and transformation. Notwithstanding, the MARC format has now become increasingly archaic and hinders data sharing and interoperability between libraries and contemporary platforms for research and information retrieval, such as the World Wide Web.
+Initial development of the core MARC format, commissioned by the Library of Congress, was finalized in 1968, when the first electronic catalog records were distributed\cite{kF12}. Originally, MARC records were used to facilitate the automated creation of card catalogs, which remained the primary method of information retrieval in libraries until the 1980s, when online public access catalogs (OPACs) became available and the pace of automation began to accelerate\cite{mT13}. It was not until 2004 that the MARC record format (stored as a binary file) was mapped to an XML schema, making it more amenable to computation and transformation\cite{mX04}. Notwithstanding, the MARC format has now become increasingly archaic and hinders data sharing and interoperability between libraries and contemporary platforms for research and information retrieval, such as the World Wide Web.
 
 \section{Is Library Metadata Big Data?}
 Although libraries and other cultural heritage institutions have created millions of metadata records over time, even the largest catalogs fall short of the scale typically associated with big data. The entire catalog of the Library of Congress, an institution that holds over 13 million physical volumes, totals less than 100 gigabytes. By comparison, Twitter produces approximately 12 terabytes of data on a daily basis\cite[p.~1527]{hE15}. According to Teets and Goldner, ``If you consider just the metadata representing the collection of printed and electronic works held by libraries, it really cannot be considered big data in its current meaning''\cite{mT13}. However, if big data is defined more broadly as a set of methodologies for analysis and an ecosystem for data aggregation, then libraries clearly stand to benefit from adopting its tools and techniques. 
