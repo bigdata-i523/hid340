@@ -6,7 +6,7 @@ paper1:
    - Timothy A. Thompson
    hid: 
    - 340
-   title: Big data analytics for archives and research libraries
+   title: Big data analytics for research libraries and archives
    abstract: >
        Research libraries and archives have played a longstanding role in
        information management and access. In the second half of the twentieth
