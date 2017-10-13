@@ -26,7 +26,7 @@
 * 09/21/17 Worked on literature review for Paper 1
 * 09/25/17 Worked on Paper 1; made initial commit for Paper 1 to GitHub
 * 10/02/17 Spent limited time on Paper 1 was limited due to personal and business travel
-* 10/09/17 Finished Paper 1; began literature review for Paper 2
+* 10/09/17 Finished and submitted Paper 1; began literature review for Paper 2
 
 # Meetings
 
