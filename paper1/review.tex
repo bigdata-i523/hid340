@@ -1,0 +1,80 @@
+\documentclass[sigconf]{acmart}
+
+\usepackage{hyperref}
+
+\usepackage{endfloat}
+\renewcommand{\efloatseparator}{\mbox{}} % no new page between figures
+
+\usepackage{booktabs} % For formal tables
+\usepackage{hyperref} % For HTTP links
+
+\settopmatter{printacmref=false} % Removes citation information below abstract
+\renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
+\pagestyle{plain} % removes running headers
+
+\begin{document}
+\title{Big Data Analytics for Research Libraries and Archives}
+
+
+\author{Timothy A. Thompson}
+%\orcid{0000-0001-6574-9010}
+\affiliation{%
+  \institution{Indiana University Bloomington}
+  \streetaddress{School of Informatics, Computing, and Engineering}
+  \city{Bloomington} 
+  \state{Indiana} 
+  \postcode{47408}
+}
+\email{timathom@indiana.edu}
+
+\begin{abstract}
+
+Research libraries and archives have played a longstanding role in information management and access. In the second half of the twentieth century, libraries were at the forefront of automation and networked access to information. Since the advent of the internet, however, they have failed to keep pace with technological advances and currently face serious challenges in serving the evolving needs of researchers, whose information-seeking strategies are now shaped by internet search engines and online social media applications. To remain relevant in the current information landscape, libraries and archives must implement new strategies for converting legacy metadata to new formats that can add value to the research process. Although the data and metadata produced by libraries and archives may not always qualify, \textit{prima facie}, as big data, an awareness among information professionals of the tools, techniques, and affordances of big data can help make library services more relevant to researchers.
+\end{abstract}
+
+\keywords{i523, hid340, Library Metadata, Archival Metadata, Linked Open Data, Data Conversion}
+
+\maketitle
+
+\section{Introduction}
+Cultural heritage institutions such as libraries and archives have a longstanding tradition of producing structured data---in the form of catalog records or finding aids---to describe their collections. In the twentieth century, library card catalogs were gradually replaced by machine-readable formats, the foremost of which were the MAchine Readable Cataloging (MARC) formats for bibliographic and authority data (standardized as ISO 2709 and ANSI/NISO Z39.2)\cite{kF12}. 
+
+Initial development of the core MARC format, commissioned by the Library of Congress, was finalized in 1968, when the first electronic catalog records were distributed\cite{kF12}. Originally, MARC records were used to facilitate the automated creation of card catalogs, which remained the primary method of information retrieval in libraries until the 1980s, when online public access catalogs (OPACs) became available and the pace of automation began to accelerate\cite{mT13}. It was not until 2004 that the MARC record format (stored as a binary file) was mapped to an XML schema, making it more amenable to computation and transformation\cite{mX04}. Notwithstanding, the MARC format has now become increasingly archaic and hinders data sharing and interoperability between libraries and contemporary platforms for research and information retrieval, such as the World Wide Web.
+
+\section{Is Library Metadata Big Data?}
+Although libraries and other cultural heritage institutions have created millions of metadata records over time, even the largest catalogs fall short of the scale typically associated with big data. The entire catalog of the Library of Congress, an institution that holds over 13 million physical volumes, totals less than 100 gigabytes. By comparison, Twitter produces approximately 12 terabytes of data on a daily basis\cite[p.~1527]{hE15}. According to Teets and Goldner, ``If you consider just the metadata representing the collection of printed and electronic works held by libraries, it really cannot be considered big data in its current meaning''\cite{mT13}. However, if big data is defined more broadly as a set of methodologies for analysis and an ecosystem for data aggregation, then libraries clearly stand to benefit from adopting its tools and techniques. 
+
+Ekbia et al., for example, propose a view of big data as a ``social movement'' that has been shaped by alliances ``among heterogeneous players in business, academia, and government''\cite[p.~1527]{hE15}. By undertaking projects focused on data modeling and mass conversion and migration of legacy data, libraries can position themselves to partner with other players and provide enhanced information retrieval services, exposing their metadata in contexts that are more relevant to the current needs of researchers. In addition, by adopting graph-based models that are native to the World Wide Web, libraries can merge their data more seamlessly with the wider universe of online data in order to ``generate massive collections of new relationship assertions''\cite{mT13}. 
+
+By leveraging universal standards such as the Resource Description Framework (RDF), libraries, archives, and other cultural heritage institutions can uncover latent relationships that are currently buried in catalog records, connecting them to data from disparate sources and providing a ``training set for all human knowledge''\cite[p.~430]{mT13}. Teets and Goldner suggest that the process of splitting catalog records into discrete, linkable statements could vastly expand the size and scope of library-created metadata: ``From a single [record], we can extract relationships from co-authors, citations, geo-locations, dates, named entities, subject classification, institution affiliations, publishers and historical circulation information. From these relationships, we can connect to other works, people, patents, events, etc. Creating, processing and making available this graph of new assertions at scale is big data''\cite[p.~431]{mT13}.
+
+\section{Toward Big Data}
+Both libraries and archives face particular challenges in attempting to embrace the ethos of big and complex data. The rules and instructions used by catalogers and archivists to describe information-bearing resources are still reflective of the card catalog environment and do not support the kind of data-centric granularity needed to enable effective data integration and interoperability\cite{rT02}. One of the primary obstacles in converting and migrating legacy data is the problem of entity resolution and name disambiguation. A second obstacle, one that is by turns social, legal, and technical in nature, involves libraries' ability to publish and preserve digitized content.
+
+\subsection{Entity Resolution}
+Two recent projects exemplify the large-scale effort in libraries and archives to remediate legacy data and merge information from multiple sources. In the archival community, researchers are often faced with scenarios in which a person's papers are scattered among geographically distant repositories, but there is no master index that links the relevant collections together. One initiative, the Social Networks and Archival Context Project (SNAC), is working to develop algorithms and routines for entity resolution in order to address this problem. Researchers in the SNAC Project have focused on developing supervised machine learning algorithms for matching names across records that have been collected from multiple archival repositories\cite{rL11}. Experiments with methods based on Naive Bayes Classification have yielded promising results, particularly when data from name strings is combined with contextual information (such as birth and death dates) that has been extracted from related records, with an accuracy rate of approximately 80\%\cite{rL11}.
+
+The task of entity resolution is made particularly difficult by the approach to data creation that has been traditionally employed by libraries and archives. In catalog records describing a book or archival collection, for example, creators are identified by name strings rather than unique identifiers. Catalogers must follow detailed rules for ensuring that each name string---known as an ``authorized heading''---is unique, but because these strings are hand-crafted by humans rather than generated by machines, they are particularly vulnerable to error and inconsistency.
+
+In the Wikidata database, by contrast, which was originally compiled from structured data templates on Wikipedia pages, the American author Mark Twain is represented by a unique identifier that can be dereferenced as an HTTP URI: \url{https://www.wikidata.org/wiki/Q7245}. Wikipedia pages about Twain, regardless of the language they are written in, are able to link to this single identifier. In the Library of Congress Name Authority File, however, Twain is identified instead by the string ``Twain, Mark, 1835-1910''.
+
+The Library of Congress maintains the ``authorized'' list of names for U.S. libraries, but many other national libraries maintain their own authority files. In the case of a well-known author such as Twain, there may be substantial agreement across institutions from Roman-script language communities as to the format of the authorized heading. For libraries and archives whose official languages are expressed in other character sets, the process of entity resolution may be more difficult.
+
+To address the problem of string-based identification, the OCLC Online Computer Library Center, a global data provider for the library industry, has developed an initiative called the Virtual International Authority File (VIAF). VIAF is a data aggregation portal that attempts to resolve named entities across ``more than 130 million authority and bibliographic records expressed in multiple languages, scripts, and formats''\cite[p.~1]{tH14}. MARC authority records are contributed to VIAF from nearly 50 contributing partners, most of which are national libraries\cite{tH14}. References to named entities are clustered and merged using a 300+ core Hadoop cluster in a monthly batch process that takes approximately ``12 hours of cluster compute time to complete''\cite[p.~2]{tH14}. In a multistep algorithm, named entities in VIAF are progressively grouped into identity clusters, and pair-wise matching is performed between datasets from each institutional contributor. Because it is able to draw on a wider range of sources for disambiguation and entity resolution, VIAF has, to date, achieved a higher degree of accuracy in matching entities than has the SNAC Project, with success rates of over 90\%\cite{tH14}.
+
+\subsection{HathiTrust}
+In the library domain, the project that perhaps comes closest to the scale and scope of ``big data'' is the HathiTrust Digital Library and the related HathiTrust Research Center. In large part, the HathiTrust initiative grew out of the response of major research libraries to the Google Books mass digitization enterprise\cite{hC10, bP13, jZ14}. Libraries were particularly concerned about the issues of long-term digital preservation and open access to research data. With the favorable settlement of a high-profile lawsuit brought by the Authors Guild and other plaintiffs against both Google and HathiTrust, the latter has moved ahead with research projects to publish curated datasets extracted from the full text of both public domain and in-copyright titles. HathiTrust is committed to providing ``non-consumptive'' access to its data, and it has developed an approach that provides access through ``data capsules''; this approach gives researchers as much flexibility as possible while simultaneously protecting against the unlawful ``leakage'' of full-text content onto the open web\cite{jZ14}.
+
+Researchers are now able to perform data mining on an extracted features dataset that contains page-level data features from all of the nearly 14-million volumes in the HathiTrust corpus. Although this dataset is substantially larger than the largest catalog of library metadata, its current size of 4 terabytes is still comparatively small by big data standards\cite{hT17}. Nonetheless, HathiTrust's methodological sophistication and principled approach to data use and access provide a model for other projects in the library domain to follow.
+
+\section{Conclusion}
+For libraries, archives, and other cultural heritage institutions, the most significant paradigm shift that could be attributed to the big data phenomenon is a new view of descriptive metadata \textit{as} data in its own right. As libraries in particular move away from legacy formats and domain-specific idiosyncrasies, they will be better equipped to serve the evolving needs and interests of researchers, who may themselves be struggling to come to grips with the scale of data in the age of the internet. Once libraries gain a more sophisticated understanding of their own data models and formats, they will be better positioned to assist researchers in managing, storing, and sharing their data---which is likely to be much bigger than anything produced by libraries themselves.
+
+\begin{acks}
+The author would like to thank Dr. Gregor von Laszewski and the i523 teaching assistants for their support and suggestions in writing this paper.
+\end{acks}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{report} 
+
+\input{bibtex-error}\input{issues}\end{document}
