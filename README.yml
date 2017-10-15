@@ -4,7 +4,8 @@ owner:
     name: Tim Thompson
     url: https://github.com/bigdata-i523/hid340
 paper1:
-    abstract: 'Research libraries and archives have played a longstanding role in
+    abstract: >
+        Research libraries and archives have played a longstanding role in
         information management and access. In the second half of the twentieth century,
         libraries were at the forefront of automation and networked access to information.
         Since the advent of the internet, however, they have failed to keep pace with
@@ -18,8 +19,6 @@ paper1:
         big data, an awareness among information professionals of the tools, techniques,
         and affordances of big data can help make library services more relevant to
         researchers.
-
-        '
     author:
         - Timothy A. Thompson
     chapter: Media
@@ -30,7 +29,8 @@ paper1:
     type: latex
     url: https://github.com/bigdata-i523/hid340/paper1/report.pdf
 paper2:
-    abstract: Massive distributed systems such as IPFS, BigchainDB, and Ethereum have
+    abstract: >
+        Massive distributed systems such as IPFS, BigchainDB, and Ethereum have
         been designed with the intention of reengineering the architecture of online
         information systems and eliminating exposure to centralized points of failure.
         Can these systems also support big data analytics and high-performance computing?
