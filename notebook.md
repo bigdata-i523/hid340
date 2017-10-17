@@ -28,11 +28,13 @@
 * 10/02/17 Spent limited time on Paper 1 this week due to personal and business travel
 * 10/09/17 Finished and submitted Paper 1; began literature review for Paper 2
 * 10/15/17 [Reviewed HID324 text for Paper 1](https://piazza.com/class/j5wll7vzylg25j?cid=494); continued research for Paper 2
+* 10/16/17 Fixed compilation issues with `review.tex` to generate `review.pdf`
 
 # Meetings
 
 * 08/28/17 Attended first online tutorial session via Zoom
 * 10/02/17 Attended class meeting for online students
+* 10/16/17 Attended class meeting for online students
 
 # Location
 
