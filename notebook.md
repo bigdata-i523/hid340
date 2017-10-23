@@ -29,6 +29,7 @@
 * 10/09/17 Finished and submitted Paper 1; began literature review for Paper 2
 * 10/15/17 [Reviewed HID324 text for Paper 1](https://piazza.com/class/j5wll7vzylg25j?cid=494); continued research for Paper 2
 * 10/16/17 Fixed compilation issues with `review.tex` to generate `review.pdf`
+* 10/22/17 Fixed remaining issues in Paper 1 (missing BibTeX fields and long quotations); submitted final version to Turnitin
 
 # Meetings
 
