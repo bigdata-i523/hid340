@@ -9,7 +9,6 @@ __pycache__/
 *.blg
 *.fls
 *.out
-*.synctex.*
 
 # C extensions
 *.so
