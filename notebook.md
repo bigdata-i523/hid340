@@ -16,6 +16,7 @@
 * 09/04/17 Purchased Raspberry Pi 3, including [SunFounder 37-module sensor kit with breadboard and jump wires](https://www.amazon.com/gp/product/B014PF05ZA/)
 * 09/08/17 Set up Raspberry Pi and ran initial tests with LED actuators; began researching Raspbery Pi projects
 * 09/12/17 Enabled Python 2 and 3 via pyenv on home workstation (in addition to VirtualBox)
+* 10/30/17 Added `develop` branch to Git repo; added initial Python scripts from BigchainDB tutorials
 
 # Writing
 
@@ -30,6 +31,7 @@
 * 10/15/17 [Reviewed HID324 text for Paper 1](https://piazza.com/class/j5wll7vzylg25j?cid=494); continued research for Paper 2
 * 10/16/17 Fixed compilation issues with `review.tex` to generate `review.pdf`
 * 10/22/17 Fixed remaining issues in Paper 1 (missing BibTeX fields and long quotations); submitted final version to Turnitin
+* 10/30/17 Continued research for Paper 2; began exploring ways to extend Paper 2 topic for Project
 
 # Meetings
 
