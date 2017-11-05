@@ -6,19 +6,20 @@ owner:
 paper1:
     abstract: >
         Research libraries and archives have played a longstanding role in
-        information management and access. In the second half of the twentieth century,
-        libraries were at the forefront of automation and networked access to information.
-        Since the advent of the internet, however, they have failed to keep pace with
-        technological advances and currently face serious challenges in serving the
-        evolving needs of researchers, whose information-seeking strategies are now
-        shaped by internet search engines and online social media applications. To
-        remain relevant in the current information landscape, libraries and archives
-        must implement new strategies for converting legacy metadata to new formats
-        that can add value to the research process. Although the data and metadata
-        produced by libraries and archives may not always qualify, prima facie, as
-        big data, an awareness among information professionals of the tools, techniques,
-        and affordances of big data can help make library services more relevant to
-        researchers.
+        information management and access. In the second half of the twentieth 
+        century, libraries were at the forefront of automation and networked 
+        access to information. Since the advent of the internet, however, they 
+        have failed to keep pace with technological advances and currently face 
+        serious challenges in serving the evolving needs of researchers, whose 
+        information-seeking strategies are now shaped by internet search engines
+        and online social media applications. To remain relevant in the current 
+        information landscape, libraries and archives must implement new 
+        strategies for converting legacy metadata to new formats that can add 
+        value to the research process. Although the data and metadata produced 
+        by libraries and archives may not always qualify, prima facie, as big 
+        data, an awareness among information professionals of the tools, 
+        techniques, and affordances of big data can help make library services 
+        more relevant to researchers.
     author:
         - Timothy A. Thompson
     chapter: Media
@@ -32,9 +33,10 @@ paper2:
     review: Nov 6 2017
     abstract: >
         Massive distributed systems such as IPFS, BigchainDB, and Ethereum have
-        been designed with the intention of reengineering the architecture of online
-        information systems and eliminating exposure to centralized points of failure.
-        Can these systems also support big data analytics and high-performance computing?
+        been designed with the intention of reengineering the architecture of 
+        online information systems and eliminating exposure to centralized 
+        points of failure. Can these systems also support big data analytics and 
+        high-performance computing?
     author:
         - Timothy A. Thompson
     hid:
