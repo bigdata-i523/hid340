@@ -42,6 +42,6 @@ paper2:
     hid:
         - 340
     status: in progress
-    title: Big data on the blockchain? Distributed networks and large-scale analytics
+    title: BigchainDB: A Big Database for the Blockchain?
     type: latex
     url: https://github.com/bigdata-i523/hid340/paper2/report.pdf
