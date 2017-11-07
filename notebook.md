@@ -17,7 +17,7 @@
 * 09/08/17 Set up Raspberry Pi and ran initial tests with LED actuators; began researching Raspbery Pi projects
 * 09/12/17 Enabled Python 2 and 3 via pyenv on home workstation (in addition to VirtualBox)
 * 10/30/17 Added `project` branch to Github repo; added initial Python scripts
-* 11/06/17 Added `assignment` branch to Github; copied .ipnyb file for cross-validation assignment; opened an issued thread and tagged/assigned team members in an effort to coordinate work on the assignment
+* 11/06/17 Added `assignment` branch to Github; copied .ipnyb file for cross-validation assignment; ~~opened an issued thread and tagged/assigned team members in an effort to coordinate work on the assignment~~
 
 # Writing
 
@@ -33,7 +33,7 @@
 * 10/16/17 Fixed compilation issues with `review.tex` to generate `review.pdf`
 * 10/22/17 Fixed remaining issues in Paper 1 (missing BibTeX fields and long quotations); submitted final version to Turnitin
 * 10/30/17 Continued research for Paper 2; began exploring ways to extend Paper 2 topic for Project
-* 11/06/17 Was ill over the weekend and unable to finish work on Paper 2; manually changed Paper 2 review date to "Nov 7 2017"
+* 11/06/17 Was ill over the weekend and unable to finish work on Paper 2; manually changed Paper 2 review date to "Nov 8 17"
 
 # Meetings
 
