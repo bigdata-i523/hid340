@@ -35,21 +35,21 @@ paper2:
     review: 66% Nov 8 17
     abstract: >
         Decentralized systems such as Bitcoin, the Interplanetary File
-        System (IPFS), and Ethereum have been designed with the 
-        intention of reengineering the architecture of online 
-        information systems, minimizing exposure to centralized points 
-        of failure, and creating new social models for the exchange of 
-        data--which is posited as a valuable asset in and of itself. 
-        Can these kinds of systems also support big data analytics and 
-        processing? If so, what stands to be gained by taking a 
-        blockchain-based approach to big data? Efforts to integrate 
-        blockchains into big data pipelines must address the 
-        inevitable tradeoffs between security and scalability. 
-        BigchainDB is a new decentralized database framework that adds 
-        blockchain-based features, such as immutability and asset 
-        management, to traditional NoSQL distributed databases. 
-        Although it is still in the early stages of development, 
-        BigchainDB promises to make a significant contribution to the 
+        System (IPFS), and Ethereum have been designed with the
+        intention of reengineering the architecture of online
+        information systems, minimizing exposure to centralized points
+        of failure, and creating new social models for the exchange of
+        data--which is posited as a valuable asset in and of itself.
+        Can these kinds of systems also support big data analytics and
+        processing? If so, what stands to be gained by taking a
+        blockchain-based approach to big data? Efforts to integrate
+        blockchains into big data pipelines must address the
+        inevitable tradeoffs between security and scalability.
+        BigchainDB is a new decentralized database framework that adds
+        blockchain-based features, such as immutability and asset
+        management, to traditional NoSQL distributed databases.
+        Although it is still in the early stages of development,
+        BigchainDB promises to make a significant contribution to the
         ways in which data is shared and managed at scale.
     author:
         - Timothy A. Thompson
