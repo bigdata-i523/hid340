@@ -55,7 +55,7 @@ paper2:
         - Timothy A. Thompson
     hid:
         - 340
-    status: in progress
+    status: 100% Nov 8 17
     title: "BigchainDB: A Big Database for the Blockchain?"
     type: latex
     url: https://github.com/bigdata-i523/hid340/paper2
