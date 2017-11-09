@@ -32,7 +32,7 @@ paper1:
     type: latex
     url: https://github.com/bigdata-i523/hid340/paper1
 paper2:
-    review: 66% Nov 8 17
+    review: 100% Nov 8 17
     abstract: >
         Decentralized systems such as Bitcoin, the Interplanetary File
         System (IPFS), and Ethereum have been designed with the
