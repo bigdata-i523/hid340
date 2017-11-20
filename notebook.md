@@ -18,6 +18,8 @@
 * 09/12/17 Enabled Python 2 and 3 via pyenv on home workstation (in addition to VirtualBox)
 * 10/30/17 Added `project` branch to Github repo; added initial Python scripts
 * 11/06/17 Added `assignment` branch to Github; copied .ipnyb file for cross-validation assignment; ~~opened an issued thread and tagged/assigned team members in an effort to coordinate work on the assignment~~
+* 11/13/17 Began experimenting with classification problems, using a dataset of library catalog records
+* 11/20/17 Focused on [perceptron experiment](https://github.com/cloudmesh/book/blob/latex/notebooks/machinelearning/perceptronproblem.ipynb); spent time researching and learning about stochastic gradient descent
 
 # Writing
 
