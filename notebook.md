@@ -19,7 +19,7 @@
 * 10/30/17 Added `project` branch to Github repo; added initial Python scripts
 * 11/06/17 Added `assignment` branch to Github; copied .ipnyb file for cross-validation assignment; ~~opened an issued thread and tagged/assigned team members in an effort to coordinate work on the assignment~~
 * 11/13/17 Began experimenting with classification problems, using a dataset of library catalog records from day job; reading [Python 3 Object-Oriented Programming](https://www.amazon.com/Python-3-Object-Oriented-Programming-Second/dp/1784398780/ref=sr_1_1?ie=UTF8&qid=1511192689&sr=8-1&keywords=object-oriented+python) for improved knowledge of Python
-* 11/20/17 Focused on [perceptron experiment](https://github.com/cloudmesh/book/blob/latex/notebooks/machinelearning/perceptronproblem.ipynb); spent time researching and learning about stochastic gradient descent
+* 11/20/17 Focused on [perceptron experiment](https://github.com/cloudmesh/book/blob/latex/notebooks/machinelearning/perceptronproblem.ipynb); spent time researching and learning about stochastic gradient descent; submitted perceptron experiment
 
 # Writing
 
