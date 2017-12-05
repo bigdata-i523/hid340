@@ -1,18 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Fri Dec  1 10:18:46 2017
+Implements the supervised gradident-based learning algorithm specified by 
+Reyes-Galaviz et al. (2017).
 
-@author: tat2
 """
 
 import numpy as np
 
-def activate(a):
-    return 1 / (1 + np.exp(-a))
-
-input_count = 8 #+ 1 # Bias node
-hidden_count = 5 #+ 1 # Bias node
+input_count = 8 
+hidden_count = 5 
 output_count = 1
 
 eta = 0.8
@@ -20,14 +17,20 @@ eta = 0.8
 data = np.load("record_pairs.npy")
 data2 = np.nan_to_num(data)
 
-
-#np.array([[0.12, 0.02, 1, 0], [0.02, 0.16, 1, 0], [0.12, 0.26, 1, 0], [0.92, 0.88, 1, 1]])
-#label = 1
+# Quality thresholds
 tau_1 = 0.4
 tau_2 = 0.7
 
+# The MLP model has 8 inputs and 5 nodes in the hidden layer. It follows 
+# the Model 2 setup presented by Reyes-Galaviz et al. Hidden nodes aggregate
+# values calculated by running each of 8 comparison functions over 5 data
+# fields (date, ISBN, title, creator, contributor)
 r = np.random.randn(input_count, hidden_count)
 w = np.random.randn(hidden_count, output_count)
+
+# Sigmoid activation function
+def activate(a):
+    return 1 / (1 + np.exp(-a))
 
 # Partial derivatives for output layer
 def Q_tau_1(s):    
@@ -58,35 +61,40 @@ def dy_dp(y):
 def dp_dr(u):
     return u
 
-for i in range(150):      
+# 150 iterations for training model
+for i in range(1):      
     
     for u in data2:
-        
+    
+        # Net input of hidden layer
         p = np.dot(u[:5, :], r)        
         
+        # Activation of hidden layer
         y = activate(p)
         
+        # Net input of output node
         l = np.dot(y, w)        
         
+        # Activation of output node
         s = activate(l)              
-    
-        p1 = dQ_ds(u, s, tau_1, tau_2)        
-        p2 = ds_dl(s)
-        p3a = y.T
-        p3b = w.T
-        p4 = dy_dp(y)
-        p5 = u[:5, :].T
         
-        dQ_dw = np.dot(p3a, (p1 * p2))        
-        dQ_dr = np.dot(p5, (p1 * p3b * p4))        
+        # Chain of partial derivatives for Model 2
+        # dQ_ds = dQ_ds(u, s, tau_1, tau_2)
+        # ds_dl = ds_dl(s)
+        dl_dw = y.T
+        dl_dy = w.T
+        # dQ_dl = dQ_ds * ds_dl
+        dQ_dy = dQ_dl * dl_dy        
+        # dy_dp = dy_dp(y)
+        dp_dr = u[:5, :].T
+        
+        # Back propogate                
+        dQ_dw = np.dot(dl_dw, (dQ_ds(u, s, tau_1, tau_2) * ds_dl(s)))        
+        dQ_dr = np.dot(dp_dr, (dQ_ds(u, s, tau_1, tau_2) * ds_dl(s) * dl_dy * dy_dp(y)))        
                              
-        r -= dQ_dr * eta      
-        
+        r -= dQ_dr * eta              
         w -= dQ_dw * eta
 
-        #print("r: ", r)
-        #print("w: ", w)
-        print(Q(u, s, tau_1, tau_2), u[5:6, 1:2])
-        #print(np.sum(s), u[5:6, 1:2])
+        print(s, u[5:6, 1:2])
         
 
