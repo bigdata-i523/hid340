@@ -86,7 +86,7 @@ for i in range(150):
 
         #print("r: ", r)
         #print("w: ", w)
-        print(Q(u, s, tau_1, tau_2), u[5:6, 1:2])
-        #print(np.sum(s), u[5:6, 1:2])
+        #print(Q(u, s, tau_1, tau_2), u[5:6, 1:2])
+        print(np.sum(s), u[5:6, 1:2], u[6:7, 1:2])
         
 
