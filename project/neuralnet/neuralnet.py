@@ -81,7 +81,7 @@ for i in range(150):
         dl_dw = y.T
         dl_dy = w.T
         # dQ_dl = dQ_ds * ds_dl
-        dQ_dy = dQ_dl * dl_dy        
+        # dQ_dy = dQ_dl * dl_dy        
         # dy_dp = dy_dp(y)
         dp_dr = u[:5, :].T
         
