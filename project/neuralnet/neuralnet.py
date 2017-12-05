@@ -58,11 +58,8 @@ def ds_dl(s):
 def dy_dp(y):
     return y * (1 - y)
 
-def dp_dr(u):
-    return u
-
 # 150 iterations for training model
-for i in range(1):      
+for i in range(150):      
     
     for u in data2:
     
@@ -95,6 +92,6 @@ for i in range(1):
         r -= dQ_dr * eta              
         w -= dQ_dw * eta
 
-        print(s, u[5:6, 1:2])
+        print(activate(s), u[5:6, 1:2])
         
 
