@@ -12,7 +12,7 @@ input_count = 8
 hidden_count = 6
 output_count = 1
 
-eta = 0.6
+eta = 0.8
 
 data = np.load("record_pairs.npy")
 data2 = np.nan_to_num(data)
