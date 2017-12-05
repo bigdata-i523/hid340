@@ -92,6 +92,6 @@ for i in range(150):
         r -= dQ_dr * eta              
         w -= dQ_dw * eta
 
-        print(activate(s), u[5:6, 1:2])
+        print(s, u[5:6, 1:2])
         
 
