@@ -66,11 +66,32 @@ project:
         - Timothy A. Thompson
     hid:
         - 340
-    title: null
+    title: >
+        New Approaches to Managing Metadata at Scale in Research
+        Libraries
     abstract: >
-        We showcase tis and that and the other
-        and another line.
-    url: https://github.com/bigdata-i523/sample-hid000/project/
+        The analysis of big data often relies on distributed storage
+        and computation; however, access to big data--and to
+        the platforms capable of managing and processing it--
+        continues to be largely centralized. Centralization is
+        particularly evident in the case of the metadata produced and
+        disseminated by academic and research libraries. Libraries
+        typically produce and share their catalog records by uploading
+        them to a central data warehouse, which can then be
+        searched for existing records. This centralized model, which
+        operates on the basis of membership fees, has the advantage of
+        scalability and availability, but it comes at the cost of a loss of
+        control over the data itself, and it entails acquiescence to a
+        business model that, in effect, charges libraries for serving
+        their own data back to them. The blockchain-based database
+        BigchainDB (written in Python) provides an alternative, peer-
+        to-peer platform that would allow libraries to share their
+        data directly and to benefit from features such as data
+        immutability and an asset-based transactional model. A working
+        prototype installation of a BigchainDB node has the potential
+        to provide an example of how libraries can abandon centralized
+        models for managing their data at scale.
+    url: https://github.com/bigdata-i523/hid340/project
     type: project
-    status: Dec 04 17 0%
+    status: Dec 7 17 66%
 chapter: TBD
