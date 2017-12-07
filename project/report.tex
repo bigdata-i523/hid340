@@ -1,0 +1,74 @@
+\RequirePackage[hyphens]{url}
+\documentclass[sigconf]{acmart}
+%\raggedbottom
+%\sloppy
+
+\input{format/i523}
+
+\begin{document}
+
+\title{New Approaches to Managing Metadata at Scale in Research Libraries}
+\author{Timothy A. Thompson}
+%\orcid{0000-0001-6574-9010}
+\affiliation{%
+  \institution{Indiana University Bloomington}
+  \streetaddress{School of Informatics, Computing, and Engineering}
+  \city{Bloomington} 
+  \state{Indiana} 
+  \postcode{47408}
+}
+\email{timathom@indiana.edu}
+
+\begin{abstract} 
+The analysis of big data often relies on distributed storage and computation; however, access to big data---and to the platforms capable of managing and processing it---continues to be largely centralized. Centralization is particularly evident in the case of the metadata produced, managed, and disseminated by academic and research libraries. Libraries typically create and share their catalog records by uploading them to a central data warehouse, which can then be searched by other libraries for records that can be copied and added to an institution's local catalog. Centralization has the advantage of scalability and availability, but it comes at the cost of a loss of autonomy. Existing metadata workflows can be optimized through the adoption of entity resolution and machine learning algorithms, including approaches based on neural network models. Although innovation is possible within the current paradigm, it can only reach its full potential in the context of peer-to-peer platforms that would allow libraries to share their data directly.
+\end{abstract}
+
+\keywords{i523, HID340, Research Libraries, Library Catalogs, Entity Resolution, Neural Networks}
+
+\maketitle
+
+\section{Introduction}
+The problem of entity resolution (also known as record linkage or data matching \cite{pC12}) is one that has a direct impact on the work of information professionals in research libraries. In library units responsible for catalog management, many workflows center on a procedure known as copy cataloging, which aims to expedite the processing of new acquisitions. Copy cataloging involves searching a shared database for records created by another cataloging agency, but that describe identical publications that have been acquired locally \cite{cD17}. In the current environment, a single company, the Online Computer Library Center (OCLC---\url{http://www.oclc.org}), is the only viable platform for global cooperative cataloging \cite{aT10}. OCLC provides data aggregation and warehousing services that allow libraries to effectively share their data, but its business model does not encourage peer-to-peer interaction and innovation among individual libraries. This centralized model, which operates on the basis of membership fees, has the advantage of scalability and availability, but it comes at the cost of a loss of control over the data itself, and it entails the acceptance of a business model that, in effect, charges libraries for serving their own data back to them.
+
+\section{New Approaches to Metadata Management}
+Libraries have a tradition of experience with record matching and automation \cite{jM92}, but now stand to benefit from the increasingly mainstream availability of algorithms and routines developed within the context of data science and machine learning. Sophisticated algorithms for string comparison and probabilistic data record linkage have long been available, but are not widely used by libraries, with the exception of large-scale projects such as the Social Networks and Archival Context Project (SNAC) (\url{http://snaccooperative.org/}) and the Virtual International Authority File (VIAF) (\url{http://viaf.org/}). The former has employed methods based on Na{\"i}ve Bayes classification algorithms to aggregate and disambiguate data from across a wide range of libraries and archives. The reported accuracy of this approach fell with the range of 80-90 percent.
+
+\subsection{Neural Networks for Data Matching}
+
+\section{Conclusion}
+The blockchain-based database BigchainDB (written in Python) provides an alternative,  and to benefit from features such as data immutability and an asset-based transactional model. A working prototype installation of a BigchainDB node has the potential to provide an example of how libraries can abandon centralized models for managing their data at scale.
+
+
+\begin{acks}
+The author would like to thank Dr. Gregor von Laszewski and the i523 teaching assistants for their support and suggestions in writing this report.
+\end{acks}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{report} 
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
