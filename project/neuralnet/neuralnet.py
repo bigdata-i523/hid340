@@ -14,7 +14,7 @@ input_count = 8
 hidden_count = 5
 output_count = 1
 
-eta = 0.9
+eta = 0.4
 
 data = np.load("record_pairs.npy", encoding="latin1")
 data2 = np.nan_to_num(data)
@@ -49,17 +49,14 @@ def activate(a):
 #    else:
 #        return -(tau_2 - np.sum(s))             
     
-def dQ_ds(c, data):    
-    total = []
-    for d in data:            
-        if c == 0:
-            print(np.sum(d))
-            if np.sum(d) > tau_1:
-                d = 2 * d                
-        else:
-            if np.sum(d) < tau_2:
-                d = 2 * (d - 1)
-    return d
+def dQ_ds(c, data):              
+    if c == 0:            
+        if np.sum(data) > tau_1:
+            data = 2 * data
+    else:
+        if np.sum(data) < tau_2:
+            data = 2 * (data - 1)
+    return data
 
 def ds_dl(s):
     return s * (1 - s)
@@ -121,7 +118,7 @@ for i in range(1000):
         f4 = result[:, :, 0] > 0.5
         f5 = result[:, :, 0] < 0.5
           
-#        print(len(f[f2 & f4]), len(f[f3 & f5]))
+        print(len(f[f2 & f4]), len(f[f3 & f5]))
         
     r_final = r
     w_final = w
