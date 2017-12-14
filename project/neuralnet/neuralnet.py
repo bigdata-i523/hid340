@@ -14,7 +14,7 @@ input_count = 8
 hidden_count = 5
 output_count = 1
 
-eta = 0.8
+eta = 0.4
 
 data = np.load("record_pairs.npy", encoding="latin1")
 data2 = np.nan_to_num(data)
@@ -67,7 +67,7 @@ def dy_dp(y):
     return y * (1 - y)
  
 output = []
-
+tally = []
 training = data[0:1960]
 
 # Iterations for training model
@@ -123,13 +123,17 @@ for i in range(1000):
                 f4 = result[:, :, 0] > 0.5
                 f5 = result[:, :, 0] < 0.5
                   
-                print(len(f[f2 & f4]), len(f[f3 & f5]))
+                #print(len(f[f2 & f4]), len(f[f3 & f5]))
+                tally.append([len(f[f2 & f4]), len(f[f3 & f5])])
             
         r_final = r
         w_final = w
             
         output = []
         result = []
+
+    print(np.sum(np.array([tally])[:, :, 0]), np.sum(np.array([tally])[:, :, 1]))
+    tally = []
         #np.savetxt("training_output.txt", np.array([output]))
         
         
