@@ -77,58 +77,61 @@ for i in range(1000):
     
     for t in training:    
         t2 = np.nan_to_num(t)
-        for u in t2:                                     
-            c = u[:, :][5][0]
+        if t2.shape[0] != 0:
+            
+            for u in t2:                                     
+                c = u[:, :][5][0]
+            
+                u2 = u[:5, :]
+            
+                # Net input of hidden layer
+                p = np.dot(u2, r)        
+                
+                # Activation of hidden layer
+                y = activate(p)
+                
+                # Chain of partial derivatives for Model 2               
+                
+                # Net input of output node
+                l = np.dot(y, w)        
+                
+                # Activation of output node
+                s = activate(l)   
+                
+                dE_o = dQ_ds(c, s)
+                
+                dE_h = np.dot(dE_o, w.T)
+                
+                dQ_dw = eta * np.dot(y.T, dE_o * ds_dl(s))
+                                     
+                dQ_dr = eta * np.dot(u2.T, dE_h * dy_dp(y))        
+                
+                r -= dQ_dr
+                w -= dQ_dw
+                
+                output.append([np.sum(s), c])
+                
+                
+            result = np.array([output])
+           
+            
+            
+            f = result
+            if len(f) > 0:              
+                f2 = result[:, :, 1] == 0
+                f3 = result[:, :, 1] == 1
+                f4 = result[:, :, 0] > 0.5
+                f5 = result[:, :, 0] < 0.5
+                  
+                print(len(f[f2 & f4]), len(f[f3 & f5]))
+            
+        r_final = r
+        w_final = w
+            
+        output = []
+        result = []
+        #np.savetxt("training_output.txt", np.array([output]))
         
-            u2 = u[:5, :]
         
-            # Net input of hidden layer
-            p = np.dot(u2, r)        
-            
-            # Activation of hidden layer
-            y = activate(p)
-            
-            # Chain of partial derivatives for Model 2               
-            
-            # Net input of output node
-            l = np.dot(y, w)        
-            
-            # Activation of output node
-            s = activate(l)   
-            
-            dE_o = dQ_ds(c, s)
-            
-            dE_h = np.dot(dE_o, w.T)
-            
-            dQ_dw = eta * np.dot(y.T, dE_o * ds_dl(s))
-                                 
-            dQ_dr = eta * np.dot(u2.T, dE_h * dy_dp(y))        
-            
-            r -= dQ_dr
-            w -= dQ_dw
-            
-            output.append([np.sum(s), c])
-             
-    
-    result = np.array([output])
-                        
         
-    f = result
-    if len(f) > 0:              
-        f2 = result[:, :, 1] == 0
-        f3 = result[:, :, 1] == 1
-        f4 = result[:, :, 0] > 0.5
-        f5 = result[:, :, 0] < 0.5
-          
-        print(len(f[f2 & f4]), len(f[f3 & f5]))
         
-    r_final = r
-    w_final = w
-        
-    output = []
-    result = []
-    #np.savetxt("training_output.txt", np.array([output]))
-    
-    
-    
-    
