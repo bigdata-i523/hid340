@@ -14,14 +14,14 @@ input_count = 8
 hidden_count = 5
 output_count = 1
 
-eta = 0.4
+eta = 0.02
 
 data = np.load("record_pairs.npy", encoding="latin1")
 data2 = np.nan_to_num(data)
 
 # Quality thresholds
-tau_1 = 0.5
-tau_2 = 0.5
+tau_1 = 0.01
+tau_2 = 0.99
 
 # The MLP model has 8 inputs and 5 nodes in the hidden layer. It follows 
 # the Model 2 setup presented by Reyes-Galaviz et al. Hidden nodes aggregate
@@ -53,9 +53,11 @@ def dQ_ds(c, data):
     if c == 0:            
         if np.sum(data) > tau_1:
             data = 2 * data
+            return data
     else:
         if np.sum(data) < tau_2:
             data = 2 * (data - 1)
+            return data
     return data
 
 def ds_dl(s):
